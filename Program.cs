@@ -13,7 +13,7 @@ else
 {
     builder.Services.AddDbContext<MyDatabaseContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING")));
-    builder.Services.AddDistributedMemoryCache()
+    builder.Services.AddDistributedMemoryCache();
 }
 
 // Add services to the container.
